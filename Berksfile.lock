@@ -1,0 +1,9 @@
+DEPENDENCIES
+  fai_linux_audit
+    path: .
+    metadata: true
+
+GRAPH
+  audit (7.3.0)
+  fai_linux_audit (0.1.0)
+    audit (>= 0.0.0)
