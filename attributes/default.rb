@@ -14,7 +14,7 @@ when 'oracle'
     default['audit']['profiles'] = [
       {
         'name' => 'linux',
-        'compliance' => 'audit/cis-rhel6-level1-server',
+        'compliance' => 'audit/cis-ol6-level1-server',
       },
     ]
   end
