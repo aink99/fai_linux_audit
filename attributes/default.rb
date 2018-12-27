@@ -6,31 +6,43 @@ when 'oracle'
   when /^7/
     default['audit']['profiles'] = [
       {
-        'name' => 'linux',
+        'name' => 'Linux-Oracle-7',
         'compliance' => 'audit/cis-oraclelinux7-level1',
       },
     ]
   when /^6/
     default['audit']['profiles'] = [
       {
-        'name' => 'linux',
+        'name' => 'Linux-Oacle-6',
         'compliance' => 'audit/cis-ol6-level1-server',
       },
     ]
   end
 when 'redhat'
-  default['audit']['profiles'] = [
-    {
-      'name' => 'linux',
-      'compliance' => 'audit/cis-rhel7-level1-server',
-    },
-  ]
-
+  case node['platform_version']
+  when /^7/
+    default['audit']['profiles'] = [
+      {
+        'name' => 'Linux-RedHat-7',
+        'compliance' => 'audit/cis-rhel7-level1-server',
+      },
+    ]
+  when '/^6/'
+    default['audit']['profiles'] = [
+      {
+        'name' => 'Linux-RedHat-6',
+        'compliance' => 'audit/cis-rhel6-level1-server',
+      },
+    ]
+  end
+when 'suse'
+  case node['platform_version']
+  when /^12/
+    default['audit']['profiles'] = [
+      {
+        'name' => 'Linux-Suse-12',
+        'compliance' => 'audit/cis-sles12-level1',
+      },
+    ]
+  end
 end
-
-
-
-#   "platform": "oracle",
-  #  "platform_version": "/^7./",
-  #  "platform_family": "rhel",
-  #  "hostnamectl": {
