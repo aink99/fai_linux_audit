@@ -13,7 +13,7 @@ when 'oracle'
   when /^6/
     default['audit']['profiles'] = [
       {
-        'name' => 'Linux-Oacle-6',
+        'name' => 'Linux-Oracle-6',
         'compliance' => 'audit/cis-ol6-level1-server',
       },
     ]
