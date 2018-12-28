@@ -125,7 +125,6 @@ Rename  audit-cis-rhel6-level1-server-VersionNumber to audit-cis-ol6-level1-serv
 Zip the folder and upload it to your chef automate server.
 
 
-
 ![profile-upload](images/2018/12/profile-upload.png)
 
 ![zip_upload](images/2018/12/zip-upload.png)
