@@ -97,7 +97,7 @@ Get rid of all the :
 
   release: 6.1
 ```
-And rename Red Hat Enterprise Linux to Oracle Linux.
+And renamed `Red Hat Enterprise Linux` to `Oracle Linux`.
 
 Final result shoud look like this :
 ```
@@ -115,7 +115,7 @@ supports:
 - platform-name: oracle
   release: 6.*
 ```
-Rename  audit-cis-rhel6-level1-server-VersionNumber to audit-cis-ol6-level1-server-VersionNumber.
+Rename the directory `audit-cis-rhel6-level1-server-VersionNumber` to `audit-cis-ol6-level1-server-VersionNumber`.
 
 Zip the folder and upload it to your chef automate server.
 
