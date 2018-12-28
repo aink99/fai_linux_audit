@@ -16,7 +16,7 @@ Set automatic scan for various Linux distributions.
 
 ## Cookbook Dependencies
 
-This cookbooks depedns on the [audit](https://supermarket.chef.io/cookbooks/audit) cookbook from Chef.
+This cookbooks depends on the [audit](https://supermarket.chef.io/cookbooks/audit) cookbook from Chef.
 
 ## Chef automate
 A  generic user 'audit' was setup on the Chef automation server.
@@ -37,7 +37,7 @@ audit/cis-rhel7-level1-server
 1.0.0-6
 audit/cis-sles12-level1
 
-Linux Oracle 6 was not avaiable from the asset store. So  from the `Asset store`, in the profiles tabs.
+Linux Oracle 6 was not avaiable from the asset store. So to solved this, from the `Asset store`, in the profiles tabs.
 
 ![Profile List](images/2018/12/profile-list.png)
 
@@ -45,7 +45,7 @@ Click on the *CIS Red Hat Enterprise Linux 6 Benchmark Level 1*  and the press t
 
 ![Profile Download](images/2018/12/profile-download.png)
 
-Extrack the downloaded file and modify the inspect.yaml  file.
+Extract the downloaded file and modify the inspect.yaml file.
 
 ![Inspect](images/2018/12/inspect.png)
 
@@ -62,9 +62,10 @@ Get rid of all the
 And rename Red Hat Enterprise Linux to Oracle Linux.
 
 Final result shoud look like this :
+
 ![final_inspect](images/2018/12/final-inspect.png)
 
-Rename  audit-cis-rhel6-level1-server-VersionNumber to audit-cis-ol6-level1-server-VersionNumber.
+Rename audit-cis-rhel6-level1-server-VersionNumber to audit-cis-ol6-level1-server-VersionNumber.
 
 Zip the folder and upload it to your chef automate server.
 
