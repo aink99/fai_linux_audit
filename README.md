@@ -53,10 +53,7 @@ Extrack the downloaded file and modify the inspect.yaml  file.
 
 The original File looks liket this :
 
-#![inpsect_content](images/2018/12/inpsect-content.png)
 ```
-klkklk
-
 ---
 name: cis-rhel6-level1-server
 title: CIS Red Hat Enterprise Linux 6 Benchmark Level 1 - Server
@@ -91,13 +88,11 @@ supports:
   release: 6.1
 - platform-name: redhat
   release: 6 ELS +
-
 ```
 
 Get rid of all the :
 
 ```
-
  - platform-name: redhat
 
   release: 6.1
